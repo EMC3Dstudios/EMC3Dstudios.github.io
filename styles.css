@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111;
+    color: #fff;
+}
+
+/* ENCABEZADO */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #000;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* CARRUSEL */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    background: #111;
+    padding: 20px 0;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 120s linear infinite;
+    gap: 20px;
+}
+
+.carousel img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px;
+    filter: drop-shadow(0 0 8px #000);
+    transition: transform 0.3s;
+}
+
+.carousel img:hover {
+    transform: scale(1.08);
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* PROYECTOS */
+.projects {
+    padding: 50px 20px;
+    background: #181818;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #222;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    transition: transform .3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover ;
+}
+
+.card h3 {
+    padding: 15px;
+    text-align: center;
+}
+
+/* ANIMACIONES */
+.animations {
+    padding: 50px 20px;
+    background: #101010;
+}
+
+.animations h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.animation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.animation-grid video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    color: #aaa;
+}
+

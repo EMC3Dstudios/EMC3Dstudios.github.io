@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes 3D</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="personajes.css">
+    <!-- Para GLB -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="sub-header">
+        <h1>Personajes 3D</h1>
+        <p>Diseños – Sculpt – Retopología – Texturizado</p>
+        <a href="index.html" class="back-btn">Regresar al portafolio</a>
+    </header>
+
+    <!-- GALERÍA DE PERSONAJES -->
+    <section class="characters">
+        <h2>Galería de Personajes</h2>
+
+        <div class="char-grid">
+
+          <div class="char-card">
+            <img src="LS (2).jpg" alt="Personaje 1">
+            <h3>Lo sabiamos</h3>
+              <p>Modelado en Blender + rig básico para animación.</p>
+            </div>
+
+            <div class="char-card">
+                <img src="MCF.png" alt="Personaje 2">
+                <h3>Mecha de Combate</h3>
+                <p>Hard surface + rig básico para animación.</p>
+          </div>
+
+            <div class="char-card">
+              <img src="BPR_Composite.png" alt="Personaje 3">
+                <h3>Criatura Xenomorfo</h3>
+                <p>Sculpt en ZBrush – retopología manual.</p>
+          </div>
+
+          <div class="char-card">
+            <img src="BAPHI.png" alt="Personaje 4">
+            <h3>Personaje Cartoon</h3>
+              <p>Estilo stylized,</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODELOS GLB -->
+    <section class="models">
+        <h2>Modelos GLB</h2>
+        <p style="text-align:center; margin-bottom:20px;">Visualización interactiva de modelos 3D</p>
+
+        <div class="model-grid">
+
+          <div class="model-box">
+            <model-viewer 
+                    src="odc.glb" 
+                    autoplay 
+                    auto-rotate 
+                    camera-controls 
+                    shadow-intensity="1">
+                </model-viewer>
+              <h3>OJO DE CTHULHU - TERRARIA</h3>
+            </div>
+
+            <div class="model-box">
+                <model-viewer 
+                    src="CHICA.glb" 
+                    auto-rotate 
+                    camera-controls 
+                    shadow-intensity="1">
+                </model-viewer>
+                <h3>CHICA - FNaF</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        © 2025 - EMC3D • Alonso Gonzalez Ian Zahid
+    </footer>
+
+</body>
+</html>
+

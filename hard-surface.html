@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Surface</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="subpage.css">
+
+    <!-- Visor GLB -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="sub-header">
+        <h1>Hard Surface</h1>
+        <p>Modelos mecánicos, robóticos y de superficies duras</p>
+        <a href="index.html" class="back-btn">Regresar al portafolio</a>
+    </header>
+
+    <!-- GALERÍA -->
+    <section class="gallery">
+        <h2>Renders Hard Surface</h2>
+
+        <div class="grid">
+
+          <div class="item">
+                <img src="SECURITYKG-1.jpg" alt="Hard Surface 1">
+                <h3>Robot Industrial</h3>
+                <p>Modelo con piezas mecánicas detalladas y texturas metálicas.</p>
+            </div>
+
+            <div class="item">
+                <img src="arma.png" alt="Hard Surface 2">
+                <h3>Arma Sci-Fi</h3>
+                <p>Diseño de arma futurista con materiales PBR.</p>
+            </div>
+
+            <div class="item">
+              <img src="CASCO.png" alt="Hard Surface 3">
+                <h3>Casco ODST</h3>
+                <p>Hard surface inspirado en tecnología militar moderna.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODELO GLB -->
+    <section class="models">
+        <h2>Modelo GLB - Hard Surface</h2>
+        <p class="center">Explora el modelo mecánico en 3D</p>
+
+        <div class="model-grid">
+
+            <div class="model-card">
+                <model-viewer 
+                    src="HELLDIVER_HELMET.glb"
+                    camera-controls 
+                    auto-rotate 
+                    shadow-intensity="1">
+                </model-viewer>
+                <h3>HELLDIVER</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 - EMC3D • Alonso Gonzalez Ian Zahid
+    </footer>
+
+</body>
+</html>
+

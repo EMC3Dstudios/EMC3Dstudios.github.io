@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entornos Sci-Fi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="entornos.css">
+
+    <!-- Visor GLB -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="sub-header">
+        <h1>Entornos Sci-Fi</h1>
+        <p>Escenarios monstruosos, experimentos, laboratorios y creaturas</p>
+        <a href="index.html" class="back-btn">Regresar al portafolio</a>
+    </header>
+
+    <!-- GALERÍA -->
+    <section class="gallery">
+        <h2>Galería de Entornos</h2>
+
+        <div class="grid">
+
+            <div class="item">
+                <img src="SCP-939_6.png" alt="Entorno Sci-Fi 1">
+                <h3>Laboratorio SCP-939</h3>
+                <p>Render de ambiente futurista con iluminación volumétrica.</p>
+            </div>
+
+            <div class="item">
+              <img src="TRABAJO_FINAL_1.png" alt="Entorno Sci-Fi 2">
+                <h3>Experimento Steampunk</h3>
+                <p>Diseño modular inspirado en arquitectura steampunk.</p>
+          </div>
+
+            <div class="item">
+              <img src="animatronico (2).png" alt="Entorno Sci-Fi 3">
+                <h3>Pizzeria FNaF</h3>
+                <p>Ambiente de nave o estación con luz ambiental azul.</p>
+            </div>
+
+        </div>
+</section>
+
+    <!-- MODELOS GLB (opcional) -->
+<section class="models">
+        <h2>Modelo GLB - Entorno Interactivo</h2>
+        <p class="center">Explora este entorno 3D desde cualquier ángulo</p>
+
+        <div class="model-grid">
+
+            <div class="model-card">
+              <model-viewer 
+                    src="COMISION.glb"
+                    camera-controls 
+                    auto-rotate 
+                    shadow-intensity="1">
+                </model-viewer>
+                <h3>Escenario Interactivo 01</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      © 2025 - EMC3D • Alonso Gonzalez Ian Zahid
+  </footer>
+
+</body>
+</html>

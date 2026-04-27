@@ -1,0 +1,110 @@
+/* SUB-HEADER */
+.sub-header {
+    background: #000;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.sub-header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #444;
+}
+
+/* GALERÍA */
+.characters {
+    padding: 50px 20px;
+}
+
+.characters h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.char-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.char-card {
+    background: #1a1a1a;
+    padding-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.char-card:hover {
+    transform: scale(1.04);
+}
+
+.char-card img {
+    width: 100%;
+    height: 425px;
+    object-fit: cover;
+}
+
+.char-card h3 {
+    margin: 15px 0 5px;
+    font-size: 1.2rem;
+}
+
+.char-card p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* MODELOS GLB */
+.models {
+    padding: 50px 20px;
+    background: #111;
+}
+
+.models h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.model-box {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+model-viewer {
+    width: 100%;
+    height: 350px;
+    background: #000;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.model-box h3 {
+    font-size: 1.2rem;
+}
